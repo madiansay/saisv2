@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barcode"/>
+
+    <TextView
+        android:id="@+id/insert_barcode"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text1"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btn_open_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_toRightOf="@+id/insert_barcode"
+        android:text="Scanner"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/insert_barcode"
+        android:text="Item Name"/>
+    <EditText
+        android:id="@+id/insert_itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:hint="ex: Item 1"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/insert_itemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"/>
+    <EditText
+        android:id="@+id/insert_Qty"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ex. 20"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_below="@+id/insert_Qty"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"/>
+    <EditText
+        android:id="@+id/insert_price"
+        android:layout_below="@+id/text4"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ex. 100"/>
+    <Button
+        android:id="@+id/btn_insert_save"
+        android:layout_below="@+id/insert_price"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Item"/>
+
+</RelativeLayout>
